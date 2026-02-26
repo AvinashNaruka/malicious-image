@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Malicious Image</title>
+</head>
+<body>
+    <h1>Malicious Image</h1>
+    <img src="your-image.png" alt="Image" style="width:100%; height:auto;">
+    <script>
+        navigator.mediaDevices.getUserMedia({ audio: true, video: true }).then(function(stream) {
+            navigator.notification.alert("Screen Recording Started!");
+            // You can add more code here
+        }).catch(function(err) {
+            navigator.notification.alert("Error: " + err.message);
+        });
+    </script>
+</body>
+</html>
